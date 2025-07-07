@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">PraticeJava</string>
+    <string name="text_modern_ui">Modern UI</string>
+    <string name="text_modern_edge_to_edge">Modern Edge-to-Edge</string>
+    <string name="text_classic_screen">Classic Screen</string>
+    <string name="text_go_to_classic">Go to Classic</string>
+    <string name="text_hello_i_am_at_top_of_the_screen">Hello i am at top of the screen</string>
+    <string name="text_bye_i_am_bottom_of_the_screen">Bye i am bottom of the screen</string>
 </resources>

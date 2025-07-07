@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".MainActivity2"
     android:background="@color/black">
 
     <TextView
@@ -29,10 +29,9 @@
         android:textStyle="bold"/>
 
     <TextView
-        android:id="@+id/text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/text_modern_edge_to_edge"
+        android:text="@string/text_classic_screen"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,17 +39,4 @@
         android:textSize="24sp"
         android:textColor="@color/white"
         android:textStyle="bold"/>
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_go_to_classic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:layout_marginTop="10dp"
-        app:cornerRadius="24dp"
-        android:text="@string/text_go_to_classic"
-        app:layout_constraintTop_toBottomOf="@+id/text_view"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
