@@ -4,4 +4,26 @@
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
     </style>
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <!-- REQUIRED: Set the background color of the splash screen for dark mode. -->
+        <item name="windowSplashScreenBackground">#121212</item> <!-- Dark background -->
+
+        <!-- REQUIRED: Set the icon to display on the splash screen.
+             You might want a different icon for dark mode if your icon has light elements. -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_logo</item>
+
+        <!-- OPTIONAL: Branding image for dark mode. -->
+<!--        <item name="windowSplashScreenBrandingImage">@drawable/your_branding_logo_dark</item>-->
+
+        <!-- OPTIONAL: Animation duration remains the same. -->
+        <item name="windowSplashScreenAnimationDuration">500</item>
+
+        <!-- REQUIRED: Post splash screen theme for dark mode. -->
+        <item name="postSplashScreenTheme">@style/Theme.PraticeJava</item>
+
+        <!-- You can also customize the status bar and navigation bar colors specifically for the splash screen
+             if they need to differ from the postSplashScreenTheme. -->
+        <!-- <item name="android:statusBarColor">@color/splash_status_bar_color_dark</item> -->
+        <!-- <item name="android:navigationBarColor">@color/splash_nav_bar_color_dark</item> -->
+    </style>
 </resources>

@@ -1,9 +1,44 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.PraticeJava" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main app theme, applied after splash -->
+    <style name="Theme.PraticeJava" parent="Theme.Material3.DayNight.NoActionBar">
     </style>
 
-    <style name="Theme.PraticeJava" parent="Base.Theme.PraticeJava" />
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <!-- REQUIRED: Set the background color of the splash screen.
+             This should typically match your app's branding or a neutral color. -->
+        <item name="windowSplashScreenBackground">#FFFFFF</item> <!-- White background -->
+
+        <!-- REQUIRED: Set the icon to display on the splash screen.
+             - Use @drawable/your_app_icon for a static icon.
+             - Use @drawable/your_animated_icon for an Animated Vector Drawable (AVD).
+             The system will apply a fade-in animation to static icons. -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_logo</item>
+
+        <!-- OPTIONAL: If you prefer a static icon without the system's fade-in animation,
+             you can use windowSplashScreenIcon instead of windowSplashScreenAnimatedIcon.
+             <item name="windowSplashScreenIcon">@drawable/your_static_icon</item>
+        -->
+
+        <!-- OPTIONAL: Set a branding image to appear at the bottom of the splash screen.
+             This is often used for company logos or taglines.
+             Make sure the image is suitable for a small, bottom placement. -->
+<!--        <item name="windowSplashScreenBrandingImage">@drawable/ic_logo</item>-->
+
+        <!-- OPTIONAL: Define the duration for the icon animation on the splash screen.
+             The system will clamp this value between 200ms and 1000ms.
+             A value of 500ms is a good starting point. -->
+        <item name="windowSplashScreenAnimationDuration">500</item> <!-- 0.5 seconds -->
+
+        <!-- REQUIRED: This is crucial! It specifies the theme that your
+             launcher activity (e.g., MainActivity) will use *after* the
+             splash screen has completed its animation and dismissal.
+             This should be your main application theme. -->
+        <item name="postSplashScreenTheme">@style/Theme.PraticeJava</item>
+
+        <!-- You can also customize the status bar and navigation bar colors specifically for the splash screen
+             if they need to differ from the postSplashScreenTheme. -->
+        <!-- <item name="android:statusBarColor">@color/splash_status_bar_color</item> -->
+        <!-- <item name="android:navigationBarColor">@color/splash_nav_bar_color</item> -->
+    </style>
 </resources>
