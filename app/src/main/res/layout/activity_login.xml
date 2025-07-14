@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".activities.LoginActivity">
+
+    <TextView
+        android:id="@+id/title_prompt_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/text_hello_again_welcome_back"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/text_email_address"
+        app:boxBackgroundMode="outline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_prompt_text_view"
+        app:startIconDrawable="@drawable/ic_email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/text_password"
+        app:boxBackgroundMode="outline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_text_layout"
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/ic_password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/text_login"
+        android:textSize="18sp"
+        app:cornerRadius="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_input_layout" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/signup_and_forget_password_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_button">
+
+        <TextView
+            android:id="@+id/forget_password_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_forget_password"
+            android:textStyle="normal" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/signup_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/text_signup"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <LinearLayout
+        android:id="@+id/social_login_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signup_and_forget_password_layout">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/google_login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/google_green"
+            android:icon="@drawable/ic_google"
+            android:strokeColor="@color/border_gray"
+            android:text="@string/text_continue_with_google"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            app:cornerRadius="16dp"
+            app:iconPadding="12dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/facebook_login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/facebook_blue"
+            android:icon="@drawable/ic_facebook"
+            android:text="@string/text_continue_with_facebook"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:cornerRadius="20dp"
+            app:iconPadding="10dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/github_login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:icon="@drawable/ic_github"
+            android:text="@string/text_continue_with_github"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            app:cornerRadius="20dp"
+            app:iconPadding="10dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

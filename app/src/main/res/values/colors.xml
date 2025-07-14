@@ -2,4 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="border_gray">#DDDDDD</color>
+
+    <color name="google_green">#34A853</color>
+    <color name="facebook_blue">#1877F2</color>
+    <color name="github_black">#24292E</color>
 </resources>

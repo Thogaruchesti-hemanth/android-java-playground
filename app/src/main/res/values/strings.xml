@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">PraticeJava</string>
+    <string name="text_signup">signUp</string>
+    <string name="text_forget_password">forget password</string>
+    <string name="text_login">Login</string>
+    <string name="text_password">Password</string>
+    <string name="text_email_address">Email Address</string>
+    <string name="text_hello_again_welcome_back">Hello Again! \nWelcome \nback</string>
+    <string name="text_user_name">User Name</string>
+    <string name="text_sign_in">Sign In</string>
+    <string name="text_hello_signup_to_get_started">Hello! \nSignup to \nget started</string>
+    <string name="text_profile_icon">Profile Icon</string>
+    <string name="text_already_have_an_account">Already have An Account?</string>
+    <string name="text_continue_with_google">Continue with Google</string>
+    <string name="text_continue_with_facebook">Continue with Facebook</string>
+    <string name="text_continue_with_github">Continue with GitHub</string>
+
+
+    // add your client ID.
+    <string name="default_web_client_id">10689414479XXXXXXXXXXXXXXXX.apps.googleusercontent.com</string>
+    <string name="text_logout">Logout</string>
+
 </resources>
