@@ -5,11 +5,11 @@
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-> A hands-on Java Android learning repository where each branch contains a unique UI implementation. Practice, explore, and master Android development through practical examples - one branch at a time.
+> A hands-on Java Android learning repository where each branch contains a unique implementation. Practice, explore, and master Android development through practical examples - one branch at a time.
 
 ## 📖 About This Project
 
-This repository is designed to help developers learn Android development with Java through **practical, real-world UI implementations**. Each branch focuses on a specific UI pattern, component, or concept, making it easy to:
+This repository is designed to help developers learn Android development with Java through **practical, real-world implementations**. Each branch focuses on a specific pattern, component, or concept, making it easy to:
 
 - 🎯 Focus on one concept at a time
 - 📱 See working implementations
@@ -64,21 +64,6 @@ Traditional tutorials often mix multiple concepts, making it hard to focus. This
    - Connect your device or start an emulator
    - Click the "Run" button or press `Shift + F10`
 
-## 📂 Repository Structure
-
-```
-android-java-playground/
-├── main (default branch)
-│   ├── README.md
-│   └── BRANCH_INDEX.md (List of all UI branches)
-│
-├── ui/login-activity
-├── ui/recyclerview-basic
-├── ui/fragments-navigation
-├── ui/custom-view
-└── ... (more UI branches)
-```
-
 ## 🎯 Available UI Branches
 
 Each branch is prefixed with `ui/` for easy identification. Here's a sample of what you'll find:
@@ -104,7 +89,7 @@ Each branch is prefixed with `ui/` for easy identification. Here's a sample of w
 2. Read the branch's README for learning objectives
 3. Run the app and interact with the UI
 4. Study the code comments and structure
-5. Try modifying layouts, colors, and strings
+5. Try modifying layouts, colours, and strings
 6. Experiment and break things (that's learning!)
 
 ### For Intermediate Learners
@@ -120,21 +105,9 @@ Each branch is prefixed with `ui/` for easy identification. Here's a sample of w
 
 1. Use as a reference for complex patterns
 2. Study architecture implementations (MVVM, MVP)
-3. Learn performance optimization techniques
+3. Learn performance optimisation techniques
 4. Contribute your own UI implementations
 5. Help review and improve existing branches
-
-## 🎓 Learning Path
-
-```mermaid
-graph LR
-    A[Activities & Layouts] --> B[Views & Widgets]
-    B --> C[RecyclerView & Lists]
-    C --> D[Fragments & Navigation]
-    D --> E[Data Storage]
-    E --> F[Networking]
-    F --> G[Architecture Patterns]
-```
 
 **Recommended Order:**
 1. Basic Activities and XML layouts
@@ -150,7 +123,7 @@ graph LR
 
 We welcome contributions! Here's how you can help:
 
-### Adding a New UI Branch
+### Adding a New Branch
 
 1. **Fork the repository**
 2. **Create a new branch** from `main`
@@ -180,7 +153,7 @@ We welcome contributions! Here's how you can help:
 - ✅ Test on multiple screen sizes
 - ✅ Use meaningful variable names
 - ✅ Follow Java coding conventions
-- ✅ Proper resource organization (strings.xml, colors.xml, dimens.xml)
+- ✅ Proper resource organisation (strings.xml, colors.xml, dimens.xml)
 
 ## 📸 Screenshots
 
@@ -242,7 +215,7 @@ We welcome contributions! Here's how you can help:
 - Dependency Injection with Dagger
 - Services and Broadcast Receivers
 - Background Tasks (AsyncTask, WorkManager)
-- Performance Optimization
+- Performance Optimisation
 - Memory Management
 
 ## 💬 Community & Support
