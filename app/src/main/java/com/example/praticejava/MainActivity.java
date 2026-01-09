@@ -36,6 +36,6 @@ public class MainActivity extends AppCompatActivity {
         new Handler(Looper.getMainLooper()).postDelayed(() -> {
             //all the initialize done here and then
             isAppReady = true;
-        }, 200);
+        }, 1000);
     }
 }
