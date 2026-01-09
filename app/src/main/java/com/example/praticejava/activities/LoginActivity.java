@@ -43,9 +43,19 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_login);
+        final int paddingLeft = findViewById(R.id.main).getPaddingLeft();
+        final int paddingTop = findViewById(R.id.main).getPaddingTop();
+        final int paddingRight = findViewById(R.id.main).getPaddingRight();
+        final int paddingBottom = findViewById(R.id.main).getPaddingBottom();
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            v.setPadding(
+                    paddingLeft + systemBars.left,
+                    paddingTop + systemBars.top,
+                    paddingRight + systemBars.right,
+                    paddingBottom + systemBars.bottom
+            );
             return insets;
         });
 
