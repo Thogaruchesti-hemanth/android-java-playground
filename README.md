@@ -66,18 +66,14 @@ Traditional tutorials often mix multiple concepts, making it hard to focus. This
 
 ## 🎯 Available UI Branches
 
-Each branch is prefixed with `ui/` for easy identification. Here's a sample of what you'll find:
-
-| Branch Name | Difficulty | Description |
-|------------|-----------|-------------|
-| `feature/edge-to-edge-layout` | Intermediate | Demonstrates edge-to-edge vs classic layouts using WindowInsets |
-| `ui/recyclerview-basic` | Beginner | Simple RecyclerView implementation |
-| `ui/fragments-navigation` | Beginner | Fragment navigation basics |
-| `ui/viewpager-tabs` | Intermediate | ViewPager with TabLayout |
-| `ui/custom-view` | Intermediate | Creating custom views |
-| `ui/room-database` | Intermediate | Room database with UI |
-| `ui/mvvm-architecture` | Advanced | Complete MVVM implementation |
-| `ui/retrofit-api` | Advanced | API integration with Retrofit |
+Each branch is prefixed with the proper name  for easy identification. Here's a sample of what you'll find:
+```master
+├── feature/
+|   └── edge-to-edge-layout
+├── onboarding/                       
+│   ├── dot-indicators/
+│   │   └── animated-dot-onboarding
+```
 
 > 📝 See [BRANCH_INDEX.md](BRANCH_INDEX.md) for the complete list with screenshots and learning objectives.
 
@@ -159,9 +155,9 @@ We welcome contributions! Here's how you can help:
 
 > Each branch contains its own screenshots showing the implemented UI
 
-| Edge-to-Edge Layout                                                                                                              | Screen 2                                                           | Screen 3                                                        | Screen 4                                                      | Screen 5                                                      |
+| Edge-to-Edge Layout                                                                                                              | Dot Indicators Onboarding                                                           | Screen 3                                                        | Screen 4                                                      | Screen 5                                                      |
 | --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- |
-|<a href="https://github.com/Thogaruchesti-hemanth/android-java-playground/tree/feature/edge-to-edge-ui"> <img src="https://github.com/user-attachments/assets/0bf476cd-8612-4d1d-937b-ceda4e5b7ef5" width="180" height="380"/></a> | <img src="screenshots/recyclerview.png" width="180" height="380"/> | <img src="screenshots/fragments.png" width="180" height="380"/> | <img src="screenshots/screen4.png" width="180" height="380"/> | <img src="screenshots/screen5.png" width="180" height="380"/> |
+|<a href="https://github.com/Thogaruchesti-hemanth/android-java-playground/tree/feature/edge-to-edge-ui"> <img src="https://github.com/user-attachments/assets/0bf476cd-8612-4d1d-937b-ceda4e5b7ef5" width="180" height="380"/></a> |<a href="https://github.com/Thogaruchesti-hemanth/android-java-playground/tree/onboarding/dot-indicators/animated-dot-onboarding"><img src="https://github.com/user-attachments/assets/ec5f4fc1-f5cc-4862-8bbe-1e7e5f4d6e59" width="180" height="380"/> | <img src="screenshots/fragments.png" width="180" height="380"/> | <img src="screenshots/screen4.png" width="180" height="380"/> | <img src="screenshots/screen5.png" width="180" height="380"/> |
 
 | Screen 6                                                      | Screen 7                                                      | Screen 8                                                      | Screen 9                                                      | Screen 10                                                      |
 | ------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- | -------------------------------------------------------------- |
