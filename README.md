@@ -70,7 +70,7 @@ Each branch is prefixed with `ui/` for easy identification. Here's a sample of w
 
 | Branch Name | Difficulty | Description |
 |------------|-----------|-------------|
-| `ui/login-activity` | Beginner | Login screen with validation |
+| `feature/edge-to-edge-layout` | Intermediate | Demonstrates edge-to-edge vs classic layouts using WindowInsets |
 | `ui/recyclerview-basic` | Beginner | Simple RecyclerView implementation |
 | `ui/fragments-navigation` | Beginner | Fragment navigation basics |
 | `ui/viewpager-tabs` | Intermediate | ViewPager with TabLayout |
@@ -159,12 +159,25 @@ We welcome contributions! Here's how you can help:
 
 > Each branch contains its own screenshots showing the implemented UI
 
-| Login Activity | RecyclerView | Fragment Navigation |
-|-------------|--------------|-----------------|
-| ![Login](screenshots/login.png) | ![RecyclerView](screenshots/recyclerview.png) | ![Fragments](screenshots/fragments.png) |
+| Edge-to-Edge Layout                                                                                                              | Screen 2                                                           | Screen 3                                                        | Screen 4                                                      | Screen 5                                                      |
+| --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- |
+|<a href="https://github.com/Thogaruchesti-hemanth/android-java-playground/tree/feature/edge-to-edge-ui"> <img src="https://github.com/user-attachments/assets/0bf476cd-8612-4d1d-937b-ceda4e5b7ef5" width="180" height="380"/></a> | <img src="screenshots/recyclerview.png" width="180" height="380"/> | <img src="screenshots/fragments.png" width="180" height="380"/> | <img src="screenshots/screen4.png" width="180" height="380"/> | <img src="screenshots/screen5.png" width="180" height="380"/> |
+
+| Screen 6                                                      | Screen 7                                                      | Screen 8                                                      | Screen 9                                                      | Screen 10                                                      |
+| ------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- | -------------------------------------------------------------- |
+| <img src="screenshots/screen6.png" width="180" height="380"/> | <img src="screenshots/screen7.png" width="180" height="380"/> | <img src="screenshots/screen8.png" width="180" height="380"/> | <img src="screenshots/screen9.png" width="180" height="380"/> | <img src="screenshots/screen10.png" width="180" height="380"/> |
+
+| Screen 11                                                      | Screen 12                                                      | Screen 13                                                      | Screen 14                                                      | Screen 15                                                      |
+| -------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------- |
+| <img src="screenshots/screen11.png" width="180" height="380"/> | <img src="screenshots/screen12.png" width="180" height="380"/> | <img src="screenshots/screen13.png" width="180" height="380"/> | <img src="screenshots/screen14.png" width="180" height="380"/> | <img src="screenshots/screen15.png" width="180" height="380"/> |
+
+| Screen 16                                                      | Screen 17                                                      | Screen 18                                                      | Screen 19                                                      | Screen 20                                                      |
+| -------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------- |
+| <img src="screenshots/screen16.png" width="180" height="380"/> | <img src="screenshots/screen17.png" width="180" height="380"/> | <img src="screenshots/screen18.png" width="180" height="380"/> | <img src="screenshots/screen19.png" width="180" height="380"/> | <img src="screenshots/screen20.png" width="180" height="380"/> |
+
+
 
 ## 🛠️ Tech Stack
-
 - **Language**: Java
 - **UI Framework**: Android Views & XML Layouts
 - **Architecture**: MVVM, MVP (where applicable)
