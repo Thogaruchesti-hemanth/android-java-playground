@@ -263,10 +263,14 @@ If this repository helped you learn Android development with Java, please:
 - More coming soon...
 
 ## 📊 Project Statistics
-
+![GitHub repo size](https://img.shields.io/github/repo-size/Thogaruchesti-hemanth/android-java-playground?style=social)
 ![GitHub stars](https://img.shields.io/github/stars/Thogaruchesti-hemanth/android-java-playground?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/Thogaruchesti-hemanth/android-java-playground?style=social)
 ![GitHub watchers](https://img.shields.io/github/watchers/Thogaruchesti-hemanth/android-java-playground?style=social)
+![GitHub issues](https://img.shields.io/github/issues/Thogaruchesti-hemanth/android-java-playground?style=social)
+![GitHub last commit](https://img.shields.io/github/last-commit/Thogaruchesti-hemanth/android-java-playground?style=social)
+
+---
 
 ## 🎯 Roadmap
 
