@@ -74,7 +74,8 @@ Each branch is prefixed with the proper name  for easy identification. Here's a 
 |   |   └──clickable-widget
 |   ├── edge-to-edge-layout
 |   ├── modern-splash
-|   └── firebase-auth-multi-provider
+|   ├── firebase-auth-multi-provider
+|   └── image-picker-saver
 ├── onboarding/                       
 │   ├── dot-indicators/
 │   │   └── animated-dot-onboarding
@@ -166,7 +167,7 @@ We welcome contributions! Here's how you can help:
 
 | Multi-Authentication                                                      | Image Picker Saver                                                      | Screen 8                                                      | Screen 9                                                      | Screen 10                                                      |
 | ------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- | -------------------------------------------------------------- |
-| <a href="https://github.com/Thogaruchesti-hemanth/android-java-playground/tree/feature/firebase-auth-multi-provider"> <img src="https://github.com/user-attachments/assets/0719243e-4f59-4536-9775-d30a95b9773a" width="180" height="380"/> </a> |  <a href="https://github.com/Thogaruchesti-hemanth/android-java-playground/tree/features/media-store-practice"><img src="https://github.com/user-attachments/assets/bd529df9-e0fb-4d7b-bad2-5f470579e05d" width="180" height="380"/> | <img src="screenshots/screen8.png" width="180" height="380"/> | <img src="screenshots/screen9.png" width="180" height="380"/> | <img src="screenshots/screen10.png" width="180" height="380"/> |
+| <a href="https://github.com/Thogaruchesti-hemanth/android-java-playground/tree/feature/firebase-auth-multi-provider"> <img src="https://github.com/user-attachments/assets/0719243e-4f59-4536-9775-d30a95b9773a" width="180" height="380"/> </a> |  <a href="https://github.com/Thogaruchesti-hemanth/android-java-playground/tree/features/image-picker-saver"><img src="https://github.com/user-attachments/assets/bd529df9-e0fb-4d7b-bad2-5f470579e05d" width="180" height="380"/> | <img src="screenshots/screen8.png" width="180" height="380"/> | <img src="screenshots/screen9.png" width="180" height="380"/> | <img src="screenshots/screen10.png" width="180" height="380"/> |
 
 | Screen 11                                                      | Screen 12                                                      | Screen 13                                                      | Screen 14                                                      | Screen 15                                                      |
 | -------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------- |
