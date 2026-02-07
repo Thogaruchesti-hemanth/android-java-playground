@@ -11,6 +11,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.praticejava.R;
+import com.example.praticejava.utils.SocialLoginUtils;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
@@ -34,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         Button logoutBtn = findViewById(R.id.logout_button);
         logoutBtn.setOnClickListener(v -> {
             firebaseAuth.signOut(); // Firebase sign-out
-
+            SocialLoginUtils.signOut(this);
             // Navigate back to login screen
             Intent intent = new Intent(MainActivity.this, LoginActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);

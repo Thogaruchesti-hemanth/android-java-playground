@@ -17,6 +17,8 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.UserProfileChangeRequest;
 
+import java.util.Objects;
+
 public class SignupActivity extends AppCompatActivity {
 
     private TextInputEditText emailEditText, passwordEditText, usernameEditText;
@@ -27,9 +29,24 @@ public class SignupActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_sign_up);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+
+        // ✅ FIX: capture initial padding ONCE
+        final var root = findViewById(R.id.sign_up_layout);
+
+        final int initialLeft = root.getPaddingLeft();
+        final int initialTop = root.getPaddingTop();
+        final int initialRight = root.getPaddingRight();
+        final int initialBottom = root.getPaddingBottom();
+
+        ViewCompat.setOnApplyWindowInsetsListener(root, (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+
+            v.setPadding(
+                    initialLeft + systemBars.left,
+                    initialTop + systemBars.top,
+                    initialRight + systemBars.right,
+                    initialBottom + systemBars.bottom
+            );
             return insets;
         });
 
@@ -45,13 +62,12 @@ public class SignupActivity extends AppCompatActivity {
             startActivity(new Intent(SignupActivity.this, LoginActivity.class));
             finish();
         });
-
     }
 
     private void signupWithEmail() {
-        String email = emailEditText.getText().toString().trim();
-        String password = passwordEditText.getText().toString().trim();
-        String username = usernameEditText.getText().toString().trim();
+        String email = Objects.requireNonNull(emailEditText.getText()).toString().trim();
+        String password = Objects.requireNonNull(passwordEditText.getText()).toString().trim();
+        String username = Objects.requireNonNull(usernameEditText.getText()).toString().trim();
 
         if (email.isEmpty() || password.isEmpty() || username.isEmpty()) {
             Toast.makeText(this, "All fields are required", Toast.LENGTH_SHORT).show();
@@ -61,7 +77,10 @@ public class SignupActivity extends AppCompatActivity {
         authManager.signupWithEmail(email, password, new OnAuthCompleteListener() {
             @Override
             public void onSuccess(FirebaseUser user) {
-                UserProfileChangeRequest profileUpdates = new UserProfileChangeRequest.Builder().setDisplayName(username).build();
+                UserProfileChangeRequest profileUpdates =
+                        new UserProfileChangeRequest.Builder()
+                                .setDisplayName(username)
+                                .build();
 
                 user.updateProfile(profileUpdates).addOnCompleteListener(task -> {
                     startActivity(new Intent(SignupActivity.this, MainActivity.class));
