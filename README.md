@@ -66,18 +66,19 @@ Traditional tutorials often mix multiple concepts, making it hard to focus. This
 
 ## 🎯 Available UI Branches
 
-Each branch is prefixed with `ui/` for easy identification. Here's a sample of what you'll find:
-
-| Branch Name | Difficulty | Description |
-|------------|-----------|-------------|
-| `ui/login-activity` | Beginner | Login screen with validation |
-| `ui/recyclerview-basic` | Beginner | Simple RecyclerView implementation |
-| `ui/fragments-navigation` | Beginner | Fragment navigation basics |
-| `ui/viewpager-tabs` | Intermediate | ViewPager with TabLayout |
-| `ui/custom-view` | Intermediate | Creating custom views |
-| `ui/room-database` | Intermediate | Room database with UI |
-| `ui/mvvm-architecture` | Advanced | Complete MVVM implementation |
-| `ui/retrofit-api` | Advanced | API integration with Retrofit |
+Each branch is prefixed with the proper name  for easy identification. Here's a sample of what you'll find:
+```master
+├── feature/
+|   └── widgets/
+|   |   ├──basic-widget
+|   |   └──clickable-widget
+|   ├── edge-to-edge-layout
+|   ├── modern-splash
+|   └── firebase-auth-multi-provider
+├── onboarding/                       
+│   ├── dot-indicators/
+│   │   └── animated-dot-onboarding
+```
 
 > 📝 See [BRANCH_INDEX.md](BRANCH_INDEX.md) for the complete list with screenshots and learning objectives.
 
@@ -159,12 +160,25 @@ We welcome contributions! Here's how you can help:
 
 > Each branch contains its own screenshots showing the implemented UI
 
-| Login Activity | RecyclerView | Fragment Navigation |
-|-------------|--------------|-----------------|
-| ![Login](screenshots/login.png) | ![RecyclerView](screenshots/recyclerview.png) | ![Fragments](screenshots/fragments.png) |
+| Edge-to-Edge Layout                                                                                                              | Dot Indicators Onboarding                                                           | Moder-splah Code                                                        | Basic widget                                                      | Clickable Widgets                                                      |
+| --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- |
+|<a href="https://github.com/Thogaruchesti-hemanth/android-java-playground/tree/feature/edge-to-edge-ui"> <img src="https://github.com/user-attachments/assets/0bf476cd-8612-4d1d-937b-ceda4e5b7ef5" width="180" height="380"/></a> |<a href="https://github.com/Thogaruchesti-hemanth/android-java-playground/tree/onboarding/dot-indicators/animated-dot-onboarding"><img src="https://github.com/user-attachments/assets/ec5f4fc1-f5cc-4862-8bbe-1e7e5f4d6e59" width="180" height="380"/></a> | <a href="https://github.com/Thogaruchesti-hemanth/android-java-playground/tree/feature/modern-splash"><img src="https://github.com/user-attachments/assets/41106153-11c2-4795-8a9a-cd08a3792461" width="180" height="380"/></a> | <a href="https://github.com/Thogaruchesti-hemanth/android-java-playground/tree/features/widgets/basic-widget" width="180" height="380"/> <img src="https://github.com/user-attachments/assets/7397b531-6fb0-4238-a31f-050d1d2f3384" width="180" height="380"/> </a> | <a href="https://github.com/Thogaruchesti-hemanth/android-java-playground/tree/features/widgets/clickable-widget"> <img src="https://github.com/user-attachments/assets/300b41ba-2c3c-43e0-944a-009361fb1262" width="180" height="380"/>|
+
+| Multi-Authentication                                                      | Screen 7                                                      | Screen 8                                                      | Screen 9                                                      | Screen 10                                                      |
+| ------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- | -------------------------------------------------------------- |
+| <a href="https://github.com/Thogaruchesti-hemanth/android-java-playground/tree/feature/firebase-auth-multi-provider"> <img src="https://github.com/user-attachments/assets/0719243e-4f59-4536-9775-d30a95b9773a" width="180" height="380"/> | <img src="screenshots/screen7.png" width="180" height="380"/> | <img src="screenshots/screen8.png" width="180" height="380"/> | <img src="screenshots/screen9.png" width="180" height="380"/> | <img src="screenshots/screen10.png" width="180" height="380"/> |
+
+| Screen 11                                                      | Screen 12                                                      | Screen 13                                                      | Screen 14                                                      | Screen 15                                                      |
+| -------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------- |
+| <img src="screenshots/screen11.png" width="180" height="380"/> | <img src="screenshots/screen12.png" width="180" height="380"/> | <img src="screenshots/screen13.png" width="180" height="380"/> | <img src="screenshots/screen14.png" width="180" height="380"/> | <img src="screenshots/screen15.png" width="180" height="380"/> |
+
+| Screen 16                                                      | Screen 17                                                      | Screen 18                                                      | Screen 19                                                      | Screen 20                                                      |
+| -------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------- |
+| <img src="screenshots/screen16.png" width="180" height="380"/> | <img src="screenshots/screen17.png" width="180" height="380"/> | <img src="screenshots/screen18.png" width="180" height="380"/> | <img src="screenshots/screen19.png" width="180" height="380"/> | <img src="screenshots/screen20.png" width="180" height="380"/> |
+
+
 
 ## 🛠️ Tech Stack
-
 - **Language**: Java
 - **UI Framework**: Android Views & XML Layouts
 - **Architecture**: MVVM, MVP (where applicable)
@@ -250,10 +264,14 @@ If this repository helped you learn Android development with Java, please:
 - More coming soon...
 
 ## 📊 Project Statistics
-
+![GitHub repo size](https://img.shields.io/github/repo-size/Thogaruchesti-hemanth/android-java-playground?style=social)
 ![GitHub stars](https://img.shields.io/github/stars/Thogaruchesti-hemanth/android-java-playground?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/Thogaruchesti-hemanth/android-java-playground?style=social)
 ![GitHub watchers](https://img.shields.io/github/watchers/Thogaruchesti-hemanth/android-java-playground?style=social)
+![GitHub issues](https://img.shields.io/github/issues/Thogaruchesti-hemanth/android-java-playground?style=social)
+![GitHub last commit](https://img.shields.io/github/last-commit/Thogaruchesti-hemanth/android-java-playground?style=social)
+
+---
 
 ## 🎯 Roadmap
 
