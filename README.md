@@ -72,8 +72,9 @@ Each branch is prefixed with the proper name  for easy identification. Here's a 
 |   └── widgets/
 |   |   ├──basic-widget
 |   |   └──clickable-widget
-|   └── edge-to-edge-layout
+|   ├── edge-to-edge-layout
 |   ├── modern-splash
+|   └── firebase-auth-multi-provider
 ├── onboarding/                       
 │   ├── dot-indicators/
 │   │   └── animated-dot-onboarding
